@@ -121,4 +121,8 @@ section:nth-child(2) {
   padding: 2rem;
 }
 
+.barakaImg {
+  background-image: url(../img/Baraka.jpg);
+}
+
 /*# sourceMappingURL=main.css.map */
