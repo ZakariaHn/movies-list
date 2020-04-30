@@ -7,6 +7,8 @@ let theMaster = document.getElementById("theMaster");
   (thesLobster = document.getElementById("thesLobster"));
 
 //
+let list = document.querySelector(".list *");
+console.log(list);
 let cardFront = document.getElementById("cardFront");
 let cardBody = document.querySelector(".card__body");
 

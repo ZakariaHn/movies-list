@@ -121,6 +121,10 @@ section:nth-child(2) {
   padding: 2rem;
 }
 
+.list * {
+  transition: 1s;
+}
+
 .theMasterImg {
   background-image: url(../img/master2.jpg);
 }
