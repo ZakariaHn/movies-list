@@ -121,8 +121,32 @@ section:nth-child(2) {
   padding: 2rem;
 }
 
+.theMasterImg {
+  background-image: url(../img/master2.jpg);
+}
+
 .barakaImg {
   background-image: url(../img/Baraka.jpg);
+}
+
+.eternalImg {
+  background-image: url(../img/eternalSunshin.jpg);
+}
+
+.baathImg {
+  background-image: url(../img/baath.jpg);
+}
+
+.secondeFloorImg {
+  background-image: url(../img/songsFromTheSecondFloor.jpg);
+}
+
+.persepolisImg {
+  background-image: url(../img/persopolis.jpg);
+}
+
+.thesLobsterImg {
+  background-image: url(../img/thelobster.jpg);
 }
 
 /*# sourceMappingURL=main.css.map */
