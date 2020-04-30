@@ -19,28 +19,28 @@ main {
 section:nth-child(1) {
   height: 100%;
   width: 30%;
-  border: 1px solid black;
-  position: relative;
 }
 
 section:nth-child(2) {
   height: 100%;
   width: 70%;
-  border: 1px solid black;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  background-color: #082e4d;
 }
 
 .list {
   height: 100%;
   display: flex;
   flex-direction: column;
-  color: wheat;
+  color: #ffd485;
   justify-content: space-between;
-  background-color: black;
+  background-color: #082e4d;
 }
 
 .list * {
-  background-color: #3c3c80;
+  background-color: #0a4b80;
   height: 14%;
   display: flex;
   flex-direction: column;
@@ -48,6 +48,11 @@ section:nth-child(2) {
   padding-left: 2rem;
   font-size: 1.4rem;
   letter-spacing: 0.13rem;
+}
+
+.list div:hover {
+  background-color: #082e4d;
+  cursor: pointer;
 }
 
 .card {
