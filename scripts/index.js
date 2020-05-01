@@ -5,15 +5,16 @@ const titleHtml = document.getElementById("title"),
   cardBody = document.querySelector(".card__body"),
   listItems = document.querySelector(".list").querySelectorAll("div");
 
-for (let i = 0; i < listItems.length; i++) {
-  listItems[i].addEventListener("click", changes);
-}
+listItems.forEach((item) => {
+  item.addEventListener("click", changes);
+});
 
 function changes() {
-  for (let i = 0; i < listItems.length; i++) {
+  for (let item of listItems) {
     this.style.backgroundColor = "#082e4d";
-    listItems[i].removeAttribute("style");
+    item.removeAttribute("style");
   }
+
   let data = moviesData.find((data) => data.id == this.id);
   titleHtml.innerHTML = `<h4>${data.title}</h4>`;
   yearHtml.innerHTML = data.year;
