@@ -68,10 +68,10 @@ img {
 
 .list {
   height: 100%;
-  display: flex;
   color: #ffd485;
-  flex-direction: column;
   background-color: #082e4d;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 

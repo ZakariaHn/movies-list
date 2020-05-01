@@ -11,13 +11,13 @@ listItems.forEach((item) => {
 });
 
 function changes() {
-  for (let item of listItems) {
+  listItems.forEach((item) => {
     this.style.backgroundColor = "#082e4d";
     this.style.transform = "translateX(2rem)";
     item.removeAttribute("style");
     toHover.style.opacity = "1";
-  }
-  let data = moviesData.find((data) => data.name == this.id);
+  });
+  let data = moviesData.find((data) => data.name === this.id);
   directorHtml.innerHTML = data.director;
   cardBody.innerHTML = data.description;
   imgHtml.src = data.image;
