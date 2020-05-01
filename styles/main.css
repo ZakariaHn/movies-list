@@ -127,9 +127,16 @@ section:nth-child(2) {
 .DataField {
   width: 30rem;
   height: 43rem;
-  display: grid;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: blanchedalmond;
+}
+
+.toHover {
+  font-size: smaller;
+  font-weight: lighter;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
