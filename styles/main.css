@@ -1,5 +1,5 @@
 .card {
-  width: 31.25rem;
+  width: 32vw;
   height: 90vh;
   margin-top: 1.5rem;
 }
@@ -9,6 +9,8 @@
   position: relative;
   transition: transform 3s;
   transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
 }
 
 .card:hover .card__content {
@@ -21,7 +23,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 43rem;
+  height: 100%;
+  width: 100%;
   position: absolute;
   display: grid;
   align-content: center;
@@ -44,26 +47,18 @@ img {
   transform: translateZ(9rem);
 }
 
-.card__subtitle {
-  transform: translateZ(6rem);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  opacity: 0.7;
-}
-
-.card__body {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  transform: translateZ(6rem);
-}
-
 .card__back {
   padding: 0 1.5rem 0 1.5rem;
   color: #ffd485;
   background: #202020af;
   transform: rotateY(0.5turn);
+}
+
+.card__body {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  height: 100%;
+  transform: translateZ(6rem);
 }
 
 .list {
@@ -99,10 +94,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  box-sizing: border-box;
   letter-spacing: 0.1rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 main {
@@ -125,7 +123,7 @@ section:nth-child(2) {
 }
 
 .DataField {
-  width: 30rem;
+  width: 30vw;
   height: 43rem;
   display: flex;
   align-items: center;
@@ -137,6 +135,32 @@ section:nth-child(2) {
   font-size: smaller;
   font-weight: lighter;
   opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 0.73rem;
+  }
+
+  section:nth-child(2) {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #082e4d;
+    padding-left: 3rem;
+  }
+
+  .DataField {
+    width: 90%;
+    height: 30vh;
+  }
+
+  .card {
+    width: 60vw;
+    height: 100vh;
+    margin-top: 10rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
