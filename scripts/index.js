@@ -44,7 +44,7 @@ dataField.innerHTML += dataSection;
 let directorHtml = document.getElementById("director"),
   toHover = document.querySelector(".toHover");
 
-// Function to excute commands when after click on the list item
+// Function to excute commands after click on the list item
 
 listItems.forEach((item) => {
   item.addEventListener("click", changes);
