@@ -18,18 +18,18 @@ parsedData.forEach((obj) => {
 // Building Card to display the Poster and the description
 
 let cardContent = `
-                  <div class="card__content">
-                    <div class="card__front" id="cardFront">
+                  <div class="cardContent">
+                    <div class="cardFront">
                       <img src="" />
                     </div>
-                    <div class="card__back">
-                      <p class="card__body"></p>
+                    <div class="cardBack">
+                      <p class="cardBody"></p>
                     </div>
                   </div>`;
 
 card.innerHTML += cardContent;
 
-const cardBody = document.querySelector(".card__body"),
+const cardBody = document.querySelector(".cardBody"),
   listItems = document.querySelectorAll(".list *"),
   img = document.querySelector("img");
 
