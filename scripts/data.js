@@ -1,6 +1,3 @@
-let data = JSON.stringify(moviesData);
-export { data };
-
 let moviesData = [
   {
     id: "001",
@@ -59,3 +56,6 @@ let moviesData = [
       "David's sentence is probationary, though. If he hooks up with somebody, he might be able to go on living. Single people get shipped off to a resort for singles. They have 45 days to find a mate. Anyone without a mate gets transformed. Anyone who does find a mate gets shipped out to the yachts anchored on the lake nearby, to 'work on their relationship,' or somesuch. If there are any problems communicating, the authorities will assign them a child.",
   },
 ];
+
+let data = JSON.stringify(moviesData);
+export { data };
