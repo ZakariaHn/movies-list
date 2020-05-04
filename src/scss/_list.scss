@@ -1,0 +1,28 @@
+.list {
+  height: 100%;
+  color: #ffd485;
+  background-color: #082e4d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list * {
+  height: 14%;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  letter-spacing: 0.13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a4b80;
+}
+
+.list div:hover {
+  cursor: pointer;
+  background-color: #082e4d;
+}
+
+.list * {
+  transition: 1s;
+}

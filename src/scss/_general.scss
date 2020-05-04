@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+section:nth-child(1) {
+  height: 100%;
+  width: 30%;
+}
+
+section:nth-child(2) {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #082e4d;
+}
+
+.DataField {
+  width: 30rem;
+  height: 43rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: blanchedalmond;
+}
+
+.toHover {
+  font-size: smaller;
+  font-weight: lighter;
+  opacity: 0;
+}
