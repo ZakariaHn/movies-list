@@ -9,12 +9,14 @@
   position: relative;
   transition: transform 3s;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   width: 100%;
   height: 100%;
 }
 
 .card:hover .cardContent {
   transform: rotateY(0.5turn);
+  -webkit-transform: rotateY(0.5turn);
 }
 
 .cardFront,
@@ -30,6 +32,7 @@
   align-content: center;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 img {
@@ -45,6 +48,7 @@ img {
   color: #ffd485;
   background: #202020af;
   transform: rotateY(0.5turn);
+  -webkit-transform: rotateY(0.5turn);
 }
 
 .cardBody {
@@ -52,4 +56,5 @@ img {
   line-height: 1.6;
   height: 100%;
   transform: translateZ(6rem);
+  -webkit-transform: translateZ(6rem);
 }
