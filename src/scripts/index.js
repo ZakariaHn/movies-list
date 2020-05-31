@@ -20,7 +20,7 @@ parsedData.forEach((obj) => {
 let cardContent = `
                   <div class="cardContent">
                     <div class="cardFront">
-                      <img src="" alt="${title}"/>
+                      <img src="./img/themaster.jpg" />
                     </div>
                     <div class="cardBack">
                       <p class="cardBody"></p>
